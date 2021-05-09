@@ -40,7 +40,7 @@
                            <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
                             <?php
 
-                            $pdo = new PDO("mysql:host=localhost;dbname=mdev", "mysql", "mysql");
+                            $pdo = new PDO("mysql:host=localhost;dbname=mdev", "root", "");
                             $sql = "SELECT * FROM `people`";
                             $statment = $pdo->prepare($sql);
                             $statment->execute();
